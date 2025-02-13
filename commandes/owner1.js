@@ -40,8 +40,8 @@ const date = moment().format('DD/MM/YYYY');
         zk.sendMessage(dest, { video: { url: lien }, caption:infoMsg + menuMsg, footer: "Je suis *bst coder md*, déveloper dullah md bot" , gifPlayback : true }, { quoted: ms });
     }
     catch (e) {
-        console.log("🥵🥵 Menu erreur " + e);
-        repondre("🥵🥵 Menu erreur " + e);
+        console.log("🥵🥵 Menu  " + e);
+        repondre("🥵🥵 Menu  " + e);
     }
 } 
 // Vérification pour .jpeg ou .png
@@ -50,8 +50,8 @@ else if (lien.match(/\.(jpeg|png|jpg)$/i)) {
         zk.sendMessage(dest, { image: { url: lien }, caption:infoMsg + menuMsg, footer: "Je suis *Dullah md*, déveloper Dullah" }, { quoted: ms });
     }
     catch (e) {
-        console.log("🥵🥵 Menu erreur " + e);
-        repondre("🥵🥵 Menu erreur " + e);
+        console.log("🥵🥵 Menu " + e);
+        repondre("🥵🥵 Menu  " + e);
     }
 } 
 else {
