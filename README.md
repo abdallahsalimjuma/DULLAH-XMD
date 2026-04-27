@@ -78,7 +78,7 @@ star✨ my repo bruh don't forget please🤖
 
  GET SESSION ID BY
  
-<a href="https://dullahxmd-96fbcf48df9f.herokuapp.com/qr"><img title="Tap Here Open Session Site" src="https://img.shields.io/badge/QR CODE-h?color=brown&style=for-the-badge&logo=msi" width="100" height="38.45"/></a></p>
+<a href="https://dullahxmd-96fbcf48df9f.herokuapp.com//qr"><img title="Tap Here Open Session Site" src="https://img.shields.io/badge/QR CODE-h?color=brown&style=for-the-badge&logo=msi" width="100" height="38.45"/></a></p>
 
 
  
