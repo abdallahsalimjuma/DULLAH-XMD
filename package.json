@@ -71,6 +71,7 @@
     "figlet": "^1.7.0",
     "file-type": "16.5.3",
     "fluent-ffmpeg": "^2.1.2",
+    "ffmpeg-static": "5.2.0",
     "form-data": "^4.0.0",
     "formdata-node": "^4.3.2",
     "fs": "^0.0.1-security",
