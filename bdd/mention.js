@@ -12,7 +12,7 @@ var dbUrl=s.DATABASE_URL?s.DATABASE_URL:"postgres://db_7xp9_user:6hwmTN7rGPNsjlB
 const proConfig = {
   connectionString: dbUrl,
   ssl: {
-    rejectUnauthorized: false,
+    rejectUnauthorized: true,
   },
 };
 
@@ -46,13 +46,16 @@ creerTableMention();
   async function addOrUpdateDataInMention(url, type,message) {
       const client = await pool.connect();
       try {
+          const safeUrl = String(url || '').substring(0, 2048);
+          const safeType = String(type || '').substring(0, 100);
+          const safeMessage = String(message || '').substring(0, 5000);
           const query = `
               INSERT INTO mention (id, url, type, message)
               VALUES (1, $1, $2, $3)
               ON CONFLICT (id)
               DO UPDATE SET  url = excluded.url, type = excluded.type , message = excluded.message;
           `;
-          const values = [url, type,message];
+          const values = [safeUrl, safeType, safeMessage];
 
           await client.query(query, values);
           console.log("Données ajoutées ou mises à jour dans la table 'mention' avec succès.");
