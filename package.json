@@ -28,8 +28,6 @@
     "@google/generative-ai": "^0.1.3",
     "@green-code/music-track-data": "^2.0.3",
     "@hapi/boom": "^10.0.1",
-    "@mrnima/facebook-downloader": "1.0.0",
-    "@mrnima/tiktok-downloader": "1.0.0",
     "@sasmeee/igdl": "npm:@sasmeee/igdl",
     "@shineiichijo/marika": "^2.0.6",
     "@types/node": "^18.0.6",
